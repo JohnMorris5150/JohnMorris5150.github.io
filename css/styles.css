@@ -60,6 +60,7 @@ img.dibley {
   background-color: #8B0000;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .box2 {
@@ -71,6 +72,7 @@ img.dibley {
     background-color: #FFFACD;
     font-weight: bold;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 .box3 {
@@ -82,6 +84,7 @@ img.dibley {
   background-color: #8FBC8F;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .box4 {
@@ -93,6 +96,7 @@ img.dibley {
   background-color: #ADD8E6;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
   }
 
 .box5 {
@@ -104,6 +108,7 @@ img.dibley {
   background-color: #483D8B;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
   }
 
 .box6 {
@@ -115,4 +120,5 @@ img.dibley {
   background-color: #FF69B4;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
   }
