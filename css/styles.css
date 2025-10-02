@@ -122,3 +122,14 @@ img.dibley {
   font-size: 20px;
   border-radius: 10px;
   }
+
+h5 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ed872d;
+    text-shadow: 2px 2px black;
+  }
+
+  #boldtext {
+    font-weight: bold;
+  }
