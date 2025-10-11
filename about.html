@@ -48,16 +48,21 @@
     <div id="content"></div>
 
     <script>
-        const user = {
+      const user = {
             name: 'John Morris',
-            imageUrl: 'https://imgur.com/a/mqOnxhd',
-            bio: 'I was born in Houston, Texas on May 1st, 1979 in Herman Hospital. My parents lived in a house on the outskirts of Houston in a neighborhood called Rushwood. This is where I grew up and went to school for the next 18 years. I was an only child so I developed an active imagination and preferred playing by myself as opposed to with other kids. I loved to draw and was always drawing something on a large chalkboard I had. As I got older, I developed a love for music when I was in my early teens. I orginally started on the trumpet, but felt no connection to the instrument. Later I decided I wanted to learn to play the guitar so I could play some of the music I was listening to like Van Halen and Metallica. I attended college at the University of Houston and graduated Magna Cum Laude with a degree in Social Sciences. My first real job was working for a company called Half-Price Books. I always loved books and loved to read and I fit right in with the culture. It was at this time I joined my first band. After I started learning guitar and music theory, I intentionally waited for years before joining an actual band in that I didn't feel that I was good enough on my instrument yet. Fast forward many years later and I am still playing guitar, and I am still learning new skills.'
+            imageUrl: 'https://t4.ftcdn.net/jpg/06/61/11/51/360_F_661115158_XHkwn8ddkjJ5gzpwgLnSCBcVpp4AloQa.jpg',
+            bio: 'I was born in Houston, Texas on May 1st, 1979 in Herman Hospital. My parents lived in a house on the outskirts of Houston in a neighborhood called Rushwood. This is where I grew up and went to school for the next 18 years. I was an only child so I developed an active imagination and preferred playing by myself as opposed to with other kids. I loved to draw and was always drawing something on a large chalkboard I had. As I got older, I developed a love for music when I was in my early teens. I orginally started on the trumpet, but felt no connection to the instrument. Later I decided I wanted to learn to play the guitar so I could play some of the music I was listening to like Van Halen and Metallica. I attended college at the University of Houston and graduated Magna Cum Laude with a degree in Social Sciences. My first real job was working for a company called Half-Price Books. I always loved books and loved to read and I fit right in with the culture. It was at this time I joined my first band. Fast forward many years later and I am still playing guitar, and I am still learning new skills.'
         };
 
         // Step one - Create a React element
+        const h1 = React.createElement('h1', null, user.name);
+        const img = React.createElement('img', { src: user.imageUrl}, null);
+        const p = React.createElement('p', {className: "content"}, user.bio);
 
         // Step 2: Render the React element
-
+        ReactDOM.render(h1, document.getElementById('h1'));
+    ReactDOM.render(img, document.getElementById('img'));
+    ReactDOM.render(p, document.getElementById('content'));
     </script>
 
 </main><!-- /.container -->
