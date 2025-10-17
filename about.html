@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Morris John: 225</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <!-- Bootstrap core CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">John Morris</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="real_haunted.html">Real Haunted Houses</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main" class="container-fluid">
+    <div id="h1"></div>
+    <div id="img"></div>
+    <div id="content"></div>
+
+    <script>
+      const user = {
+            name: 'John Morris',
+            imageUrl: 'images/Cthulhu.jpg',
+            bio: 'I was born in Houston, Texas on May 1st, 1979 in Herman Hospital. My parents lived in a house on the outskirts of Houston in a neighborhood called Rushwood. This is where I grew up and went to school for the next 18 years. I was an only child so I developed an active imagination and preferred playing by myself as opposed to with other kids. I loved to draw and was always drawing something on a large chalkboard I had. As I got older, I developed a love for music when I was in my early teens. I orginally started on the trumpet, but felt no connection to the instrument. Later I decided I wanted to learn to play the guitar so I could play some of the music I was listening to like Van Halen and Metallica. I attended college at the University of Houston and graduated Magna Cum Laude with a degree in Social Sciences. My first real job was working for a company called Half-Price Books. I always loved books and loved to read and I fit right in with the culture. It was at this time I joined my first band. Fast forward many years later and I am still playing guitar, and I am still learning new skills.'
+        };
+
+        // Step one - Create a React element
+        const h1 = React.createElement('h1', null, user.name);
+        const img = React.createElement('img', { src: user.imageUrl}, null);
+        const p = React.createElement('p', {className: "content"}, user.bio);
+
+        // Step 2: Render the React element
+        ReactDOM.render(h1, document.getElementById('h1'));
+    ReactDOM.render(img, document.getElementById('img'));
+    ReactDOM.render(p, document.getElementById('content'));
+    </script>
+
+</main><!-- /.container -->
+
+<footer>
+<p>Email me for more info on haunted places!<br>
+<a href="mailto:john.morris@mymail.champlain.edu">Yes! I want to find more haunted places!</a></p>
+<img src="images/ghost.jpg" class="footerimage" alt="GhostImage">
+</footer> 
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
