@@ -324,3 +324,127 @@ footer {
   height: auto;
   max-width: 150px;
 }
+
+.parent-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+
+form {
+  width: 75%;
+  margin: 0 auto;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+
+label {
+  display: block;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+input[type=text], select {
+  width: auto;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: large;
+
+}
+
+input[type=numb], select {
+  width: auto;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: large;
+
+}
+
+input[type=email], select {
+  width: auto;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: large;
+
+}
+
+
+input[type=submit] {
+  width: auto;
+  background-color: #4caf50;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid black;
+  border-radius: 8px;
+  curser: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  font-size: 32px;
+}
+
+.password {
+   font-family: Arial, sans-serif;
+  padding: 2em;
+  background: hsl(222, 76%, 54%);
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  margin: 0.5em 0.5em 1em 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+}
+
+button:hover {
+  background-color: #2c80b4;
+}
+
+#myDIV {
+ font-family: Arial, sans-serif;
+ font-size: 32px;
+  padding: 1em;
+  background: hwb(0 19% 11%); 
+}
+
+#gridDIV {
+ font-family: Arial, sans-serif;
+ font-size: 32px;
+  padding: 1em;
+  background: hwb(0 19% 11%); 
+}
+
+#aboutDIV {
+ font-family: Arial, sans-serif;
+ font-size: 32px;
+  padding: 1em;
+  background: hwb(0 19% 11%); 
+}
