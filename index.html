@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
   <!-- Bootstrap core CSS -->
   <link href="css/styles.css" rel="stylesheet">
+  
 
   <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +33,8 @@
         <a class="nav-link" href="carousel.html">Carousel</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
+                <a class="nav-link" href="about.html">About</a>
+            </li>
       <li class="nav-item active">
         <a class="nav-link" href="real_haunted.html">Real Haunted Houses</a>
       </li>
@@ -49,7 +50,16 @@
   <div class="container home_2col">
     <div class="row">
       <div class="col">
-        <img src="images/house.jpg" class="rounded d-block dibley" alt="...">
+        
+        <div class="haunted">
+        <picture>
+         <source srcset="images/img_amityvillesmall.jpg" media="(max-width: 800px)">
+         <source srcset="images/img_amityville.jpg" media="(max-width: 1500px)">
+         <source srcset="images/img_amityville.jpg">
+         <img src="images/img_amityville.jpg" alt="Amityville">
+         </picture>
+         </div>
+
       </div>
       <div class="col">
         <h1>John Morris:WEBD-225</h1>
@@ -57,18 +67,24 @@
     </div>
   </div><!--end 2col-->
 
-  <p>Hello! My name is John Morris. I am a student at Champlain University and a professional musician.</p>
-  <p>I am hoping to learn more about html and CSS in this class and continue my journey of becoming a web designer!</p>
-</main>
-  
-  <footer>
+ <p>Hello! My name is John Morris. I am a student at Champlain University and a professional musician.</p>
+  <p>I am hoping to learn more about html and CSS in this class and continue my journey of becoming a web designer!</p> 
+
+<p id="password">What is the password?</p>
+
+
+
+</main><!-- /.container -->
+
+<footer>
 <p>Email me for more info on haunted places!<br>
 <a href="mailto:john.morris@mymail.champlain.edu">Yes! I want to find more haunted places!</a></p>
 <img src="images/ghost.jpg" class="footerimage" alt="GhostImage">
 </footer>
 
+<script src="js/script.js"></script>
 
-  
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
