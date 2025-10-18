@@ -1,6 +1,46 @@
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+const paragraph = document.getElementById('password');
+    paragraph.addEventListener('mouseover', () => {
+      paragraph.textContent = 'So long and thanks for all the fish!';
+      paragraph.style.color = "#F70214";
+      paragraph.style.fontSize = "24px";
+
+    });
+
+paragraph.addEventListener('mouseout', () => {
+      paragraph.textContent = 'What is the password?';
+      paragraph.style.color = "#050000";
+      paragraph.style.fontSize = "24px";
+
+    });
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "I WOULDN'T IF I WERE YOU") {
+    x.innerHTML = "YOU ARE NOW CURSED!";
+  } else {
+    x.innerHTML = "I WOULDN'T IF I WERE YOU";
+  }
+}
+
+function gridFunction() {
+  var x = document.getElementById("gridDIV");
+  if (x.innerHTML === "I WOULDN'T IF I WERE YOU") {
+    x.innerHTML = "THANK YOU FOR PRESSING THE SELF DESTRUCT BUTTON!";
+  } else {
+    x.innerHTML = "I WOULDN'T IF I WERE YOU";
+  }
+}
+
+function aboutFunction() {
+  var x = document.getElementById("aboutDIV");
+  if (x.innerHTML === "Would you like to learn more?") {
+    x.innerHTML = "DON'T BE NOSEY!";
+  } else {
+    x.innerHTML = "Would you like to learn more?";
+  }
+}
+
 
 $(function () {
   $('[data-toggle="popover"]').popover()
